@@ -1,0 +1,26 @@
+<h1 ><%= @restaurant.name %></h1>
+<h3 ><%= @restaurant.category %> restaurant</h3>
+<br>
+<p><span class = 'name'>address:</span> <%= @restaurant.address %></p>
+<p><span class="name">phone number:</span><%= @restaurant.phone_number %></p>
+
+
+    <% if @rating.class == Integer   %>
+      <span class ="name">rating: <% @rating.times do  %>⭐️</span>
+      <% end %>
+    <% else %>
+    <span class ="name"> rating: </span><%= @rating %>
+
+
+
+  <% end %>
+
+  <br>
+<p class = 'name'>reviews:</p>
+<% @restaurant.reviews.each do |review| %>
+  <p class = "container"><%= link_to review.content, restaurant_review_path(@restaurant) %></p>
+<% end %>
+<!-- <p><%#= @restaurant.reviews %></p> -->
+<br>
+<%= link_to "⃪ back to list ", restaurants_path %>|
+<%= link_to "+add a review", new_restaurant_review_path(@restaurant) %>

@@ -1,0 +1,7 @@
+<h1><%= @restaurant.name %> </h1>
+<% @review.rating.times do %>
+  <%= "⭐️" %>
+<% end %>
+<p><%= @review.content %></p>
+
+<%= link_to "⃪ back to restaurant",restaurant_path(@restaurant)  %>

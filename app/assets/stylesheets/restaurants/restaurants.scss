@@ -1,0 +1,47 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 60px;
+  color: #289663;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.name {
+
+  color: #188751;
+  margin-right: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  height: 120px;
+  width: 180px;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,14 @@
+<div class="d-flex align-items-end justify-content-between"><h1>Our restaurants</h1>
+  <%= link_to "+Add a new restaurant",new_restaurant_path  %></div>
+<% @restaurants.each do |restaurant| %>
+  <%= link_to restaurant.name, restaurant_path(restaurant) %>
+  <br>
+  <img src="https://source.unsplash.com/random" alt="picture">
+
+
+  <br>
+<% end %>
+<br>
+
+
+
